@@ -1,38 +1,42 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: darkblue;
+  color: white;
   text-align: center;
+  padding: 15px 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  max-width: 300px;
+  min-height: 300px;
+  margin: 20px auto;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: aliceblue;
+  border: solid 1px gray;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0,5s;
+  transform-style: preserve-3d;
 }
-
-.App-link {
-  color: #61dafb;
+.card-check {
+  transform: rotateY(180deg);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card::after {
+  content: 'обратная сторона карточки';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgreen;
+  border: solid 1px gray;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
