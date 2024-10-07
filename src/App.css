@@ -21,14 +21,14 @@
   border: solid 1px gray;
   border-radius: 10px;
   cursor: pointer;
-  transition: transform 0,5s;
+  transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 .card-check {
   transform: rotateY(180deg);
 }
 .card::after {
-  content: 'обратная сторона карточки';
+  content: attr(data-back);
   position: absolute;
   inset: 0;
   display: flex;
@@ -39,4 +39,10 @@
   border-radius: 10px;
   transform: rotateY(180deg);
   backface-visibility: hidden;
+}
+
+.control-panel {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
 }

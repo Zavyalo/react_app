@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "front": "apple",
+        "back": "яблоко"
+    },
+    {
+        "id": 2,
+        "front": "orange",
+        "back": "апельсин"
+    },
+    {
+        "id": 3,
+        "front": "bed",
+        "back": "кровать"
+    },
+    {
+        "id": 4,
+        "front": "table",
+        "back": "кровать"
+    },
+    {
+        "id": 5,
+        "front": "red",
+        "back": "красный"
+    },
+    {
+        "id": 6,
+        "front": "pen",
+        "back": "ручка"
+    },
+    {
+        "id": 7,
+        "front": "white",
+        "back": "белый"
+    },
+    {
+        "id": 8,
+        "front": "green",
+        "back": "зеленый"
+    },
+    {
+        "id": 9,
+        "front": "blue",
+        "back": "синий"
+    },
+{
+    "id": 10,
+    "front": "black",
+    "back": "черный"
+},
+{
+    "id": 11,
+    "front": "pansil",
+    "back": "карандаш"
+}
+]

@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useState } from "react";     // компонент карточка
 
-export function Card () {
+export function Card ({front, back}) {
     const [checkCard, setCheckCard] = useState(false);      
-    function handleClick(){
-        setCheckCard(!checkCard);
+    const handleClick = () => {
+        setCheckCard(!checkCard);  // меняет значение карточки false меняется на true
     }
     let className = `card ${checkCard ? 'card-check' : ''}`;  // it true - card-check, else - ' '
 
     return(
-        <div className= {className} onClick={handleClick}>Карточка 1</div>
+        <div className= {className} onClick={handleClick} data-back={back}>
+            {front}
+        </div>
     );
 }
