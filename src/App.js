@@ -1,6 +1,6 @@
 import './App.css';
-import {Header} from "./components/Header";
-import {Set} from "./components/Set";
+import {Header} from "./components/header/Header";
+import {Set} from "./components/set/Set";
 
 function App() {
   return (

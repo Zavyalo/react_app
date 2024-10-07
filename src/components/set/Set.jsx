@@ -1,8 +1,10 @@
+import './Set.css';
+
 import {useState} from "react";    // компонент с карточками
-import {Card} from "./Card";
+import {Card} from "../card/Card";
 
 export function Set(){
-    const cards = require('../data'); // подлючить данные с data.json (.. выйти в папку выше)
+    const cards = require('../../data'); // подлючить данные с data.json (.. выйти в папку выше)
     const [step, setStep] =useState(0);  // номер карточки
 
     const handleNext = () => {
@@ -25,9 +27,9 @@ export function Set(){
             back = {cards[step].back}
             />
             <div className="control-panel">
-                <button onClick={handlePrev} disabled = { step == 0 ? true : false}> &lt; </button>  
+                <button className = 'btn-control' onClick={handlePrev} disabled = { step == 0 ? true : false}> &lt; </button>  
                 <p> {step + 1} / {cards.length} </p> 
-                <button onClick={handleNext} disabled = { step == cards.length - 1 ? true : false}> &gt; </button>  
+                <button className = 'btn-control' onClick={handleNext} disabled = { step == cards.length - 1 ? true : false}> &gt; </button>  
             </div>
         </div>
     )
