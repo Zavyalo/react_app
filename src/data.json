@@ -2,56 +2,97 @@
     {
         "id": 1,
         "front": "apple",
-        "back": "яблоко"
+        "back": "яблоко",
+        "setName" : "English"
     },
     {
         "id": 2,
         "front": "orange",
-        "back": "апельсин"
+        "back": "апельсин",
+        "setName" : "English"
     },
     {
         "id": 3,
         "front": "bed",
-        "back": "кровать"
+        "back": "кровать",
+        "setName" : "English"
     },
     {
         "id": 4,
         "front": "table",
-        "back": "кровать"
+        "back": "стол",
+        "setName" : "English"
     },
     {
         "id": 5,
         "front": "red",
-        "back": "красный"
+        "back": "красный",
+        "setName" : "English"
     },
     {
         "id": 6,
         "front": "pen",
-        "back": "ручка"
+        "back": "ручка",
+        "setName" : "English"
     },
     {
         "id": 7,
         "front": "white",
-        "back": "белый"
+        "back": "белый",
+        "setName" : "English"
     },
     {
         "id": 8,
         "front": "green",
-        "back": "зеленый"
+        "back": "зеленый",
+        "setName" : "English"
     },
     {
         "id": 9,
         "front": "blue",
-        "back": "синий"
+        "back": "синий",
+        "setName" : "English"
     },
 {
     "id": 10,
     "front": "black",
-    "back": "черный"
+    "back": "черный",
+    "setName" : "English"
 },
 {
     "id": 11,
     "front": "pansil",
-    "back": "карандаш"
+    "back": "карандаш",
+    "setName" : "English"
+},
+{
+    "id": 12,
+    "front": "p",
+    "back": "абцац",
+    "setName" : "tags"
+},
+{
+    "id": 13,
+    "front": "a",
+    "back": "ссылка",
+    "setName" : "tags"
+},
+{
+    "id": 14,
+    "front": "img",
+    "back": "картинка",
+    "setName" : "tags"
+},
+{
+    "id": 15,
+    "front": "border",
+    "back": "рамка",
+    "setName" : "css"
+},
+{
+    "id": 16,
+    "front": "background",
+    "back": "фон",
+    "setName" : "css"
 }
 ]
