@@ -1,9 +1,10 @@
 import { BtnSet } from "../../components/btnSet/BtnSet";
 import {Header} from "../../components/header/Header";
+import "./pageSelectSet.css";
 
 export function PageSelectSet(){
-    const cards = require("../../data.json");
-    const sets = cards.reduce((acc, item)=>{   // выбирает неповторяющиеся setname 
+    const cards = require("../../data.json");   // берем массив объектов
+    const sets = cards.reduce((acc, item)=>{   // перебирает все карточки и выбирает неповторяющиеся setname 
         if(acc.map[item.setName])
         return acc;
         acc.map[item.setName] = true;
@@ -11,11 +12,11 @@ export function PageSelectSet(){
         return acc;
     },
     {
-        map:{},
+        map:{}, // добавляет неповторяющиеся имена наборов
         sets:[]
     }
     ).sets.map((item, index)=>(
-        <BtnSet key={index} name={item} />
+        <BtnSet key={index} name={item} id={index} />   // создает набор кнопок
     ));
 
     return (

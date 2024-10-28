@@ -1,10 +1,15 @@
 import './Set.css';
-
 import {useState} from "react";    // компонент с карточками
 import {Card} from "../card/Card";
+import { useLocation } from "react-router-dom"
 
 export function Set(){
-    const cards = require('../../data'); // подлючить данные с data.json (.. выйти в папку выше)
+    const location = useLocation();
+    const {set} = location.state;
+    const cards = require('../../data').filter((item)=>{     // подлючить данные с data.json (.. выйти в папку выше)
+        return item.setName === set
+    }); 
+
     const [step, setStep] =useState(0);  // номер карточки
 
     const handleNext = () => {

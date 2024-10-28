@@ -1,0 +1,17 @@
+.list-set_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    border: darkblue solid 1px;
+    background-color: lightblue;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+.list-set_btn:hover {
+    background-color: cadetblue;
+}
