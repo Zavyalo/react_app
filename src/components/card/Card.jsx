@@ -1,5 +1,4 @@
 import './Card.css';
-
 import { useState } from "react";     // компонент карточка
 
 export function Card ({front, back}) {

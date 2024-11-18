@@ -1,0 +1,19 @@
+form {
+    margin: 10px auto;
+    width: 300px;
+}
+.form__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+label {
+    margin-bottom: 7px;
+}
+input[tupe=submit] {
+    padding: 10px;
+}
+.erorr-msg {
+    color: red;
+    font-size: 12px;
+}
